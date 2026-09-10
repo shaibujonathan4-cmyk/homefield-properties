@@ -3,6 +3,7 @@ import { useProperties } from '../context/PropertyContext.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import BookingPanel from '../components/BookingPanel.jsx';
+import { usePageMeta } from '../hooks/usePageMeta.js';
 import './PropertyDetailPage.css';
 export default function PropertyDetailPage() {
   const { id } = useParams();
@@ -23,6 +24,11 @@ export default function PropertyDetailPage() {
   }
 
   const { title, location, price, priceLabel, specs, description, images, category, status } = property;
+
+  usePageMeta(
+    title,
+    `${title} in ${location}. ${specs.rooms !== '-' ? specs.rooms + ' rooms, ' : ''}${specs.size}. ${description.slice(0, 100)}`
+  );
 
   return (
     <>

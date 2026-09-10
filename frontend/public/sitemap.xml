@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://homefield-properties.vercel.app/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://homefield-properties.vercel.app/category/homes</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://homefield-properties.vercel.app/category/self-contained</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://homefield-properties.vercel.app/category/shops</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://homefield-properties.vercel.app/category/lands</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>

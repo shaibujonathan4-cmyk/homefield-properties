@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://homefield-properties.vercel.app/sitemap.xml

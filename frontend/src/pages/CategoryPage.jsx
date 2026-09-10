@@ -3,8 +3,8 @@ import { useProperties } from '../context/PropertyContext.jsx';
 import Navbar from '../components/Navbar.jsx';
 import Footer from '../components/Footer.jsx';
 import PropertyCard from '../components/PropertyCard.jsx';
+import { usePageMeta } from '../hooks/usePageMeta.js';
 import './CategoryPage.css';
-
 const CATEGORY_LABELS = {
   homes: 'Homes',
   'self-contained': 'Self Contained',
@@ -17,6 +17,11 @@ export default function CategoryPage() {
   const label = CATEGORY_LABELS[slug] || 'Properties';
   const { getPropertiesByCategory } = useProperties();
   const listings = getPropertiesByCategory(slug);
+
+  usePageMeta(
+    label,
+    `Browse ${label.toLowerCase()} for rent or sale on Homefield. See specs, price, and booking fee for every listing.`
+  );
   return (
     <>
       <Navbar />
