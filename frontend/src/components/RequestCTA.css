@@ -1,0 +1,117 @@
+.request-cta {
+  padding: 96px 0;
+}
+
+.request-cta-inner {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 56px;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 56px;
+}
+
+.request-cta-copy h2 {
+  font-size: 30px;
+  max-width: 340px;
+}
+
+.request-cta-copy p {
+  margin-top: 16px;
+  color: var(--color-forest);
+  font-size: 15px;
+  max-width: 320px;
+  line-height: 1.6;
+}
+
+.request-cta-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.request-cta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.request-cta-form input,
+.request-cta-form textarea {
+  font-family: var(--font-body);
+  font-size: 15px;
+  padding: 13px 16px;
+  border: 1px solid rgba(28, 43, 34, 0.15);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  resize: none;
+}
+
+.request-cta-form input:focus,
+.request-cta-form textarea:focus {
+  outline: none;
+  border-color: var(--color-gold-dark);
+}
+
+.request-cta-form button {
+  align-self: flex-start;
+  background: var(--color-gold);
+  color: var(--color-white);
+  border: none;
+  padding: 13px 28px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 6px;
+  transition: background 0.15s ease;
+}
+
+.request-cta-form button:hover {
+  background: var(--color-gold-dark);
+}
+
+@media (max-width: 780px) {
+  .request-cta-inner {
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+  .request-cta-row {
+    grid-template-columns: 1fr;
+  }
+}
+.request-cta-success {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.request-cta-success h2 {
+  font-size: 28px;
+}
+
+.request-cta-success p {
+  margin-top: 12px;
+  color: var(--color-stone);
+  font-size: 15px;
+}
+
+.request-cta-error {
+  font-size: 13.5px;
+  color: #B3402A;
+}
+
+.request-cta-form .spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(251, 249, 244, 0.4);
+  border-top-color: var(--color-white);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

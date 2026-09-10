@@ -1,0 +1,92 @@
+.booking-panel {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  position: sticky;
+  top: 96px;
+  box-shadow: 0 8px 28px rgba(28, 43, 34, 0.1);
+}
+
+.booking-panel-price {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.booking-panel-price-amount {
+  font-family: var(--font-display);
+  font-size: 28px;
+  color: var(--color-ink);
+}
+
+.booking-panel-price-label {
+  font-size: 13px;
+  color: var(--color-stone);
+}
+
+.booking-panel-fee-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(28, 43, 34, 0.1);
+  font-size: 14.5px;
+  color: var(--color-forest);
+}
+
+.booking-panel-cta {
+  width: 100%;
+  margin-top: 20px;
+  background: var(--color-gold);
+  color: var(--color-white);
+  border: none;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.15s ease;
+}
+
+.booking-panel-cta:hover {
+  background: var(--color-gold-dark);
+}
+
+.booking-panel-policy {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(28, 43, 34, 0.1);
+}
+
+.booking-panel-policy h4 {
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-top: 14px;
+}
+
+.booking-panel-policy h4:first-child {
+  margin-top: 0;
+}
+
+.booking-panel-policy p {
+  margin-top: 6px;
+  font-size: 13.5px;
+  color: var(--color-stone);
+  line-height: 1.6;
+}
+
+.booking-panel-note {
+  margin-top: 20px;
+  font-size: 12.5px;
+  color: var(--color-stone);
+  text-align: center;
+}
+.booking-panel-cta--disabled {
+  background: var(--color-stone);
+  cursor: not-allowed;
+}
+
+.booking-panel-cta--disabled:hover {
+  background: var(--color-stone);
+}

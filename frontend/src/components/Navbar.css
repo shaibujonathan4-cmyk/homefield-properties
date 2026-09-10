@@ -1,0 +1,91 @@
+.navbar {
+  background: var(--color-bg);
+  border-bottom: 1px solid rgba(28, 43, 34, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+}
+
+.navbar-brand {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 28px;
+  font-size: 15px;
+}
+
+.navbar-links a {
+  color: var(--color-forest);
+  transition: color 0.15s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--color-gold-dark);
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+}
+
+.navbar-login {
+  color: var(--color-ink);
+}
+
+.navbar-signup {
+  background: var(--color-ink);
+  color: var(--color-white);
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  transition: background 0.15s ease;
+}
+
+.navbar-signup:hover {
+  background: var(--color-forest);
+}
+
+.navbar-logout {
+  background: none;
+  border: none;
+  color: var(--color-ink);
+  font-size: 15px;
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+.navbar-greeting {
+  font-size: 14px;
+  color: var(--color-forest);
+}
+
+@media (max-width: 860px) {
+  .navbar-links {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar-inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 14px 0;
+    gap: 10px;
+  }
+  .navbar-greeting {
+    display: none;
+  }
+}

@@ -1,0 +1,64 @@
+.my-bookings-page {
+  padding: 48px 0 96px;
+  min-height: 60vh;
+}
+
+.my-bookings-page h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.my-bookings-empty {
+  color: var(--color-stone);
+  font-size: 15px;
+}
+
+.my-bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 560px;
+}
+
+.my-booking-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(28, 43, 34, 0.08);
+}
+
+.my-booking-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.my-booking-top h3 {
+  font-size: 18px;
+}
+
+.my-booking-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid rgba(28, 43, 34, 0.08);
+  font-size: 14px;
+  color: var(--color-forest);
+}
+
+.my-booking-cancel {
+  width: 100%;
+  margin-top: 16px;
+  background: none;
+  border: 1px solid rgba(179, 64, 42, 0.3);
+  color: #B3402A;
+  padding: 10px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+}
+
+.my-booking-cancel:hover {
+  background: rgba(179, 64, 42, 0.06);
+}

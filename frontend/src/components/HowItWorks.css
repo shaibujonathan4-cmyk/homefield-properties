@@ -1,0 +1,48 @@
+.how-it-works {
+  background: var(--color-ink);
+  padding: 88px 0;
+}
+
+.how-it-works-inner h2 {
+  color: var(--color-white);
+  font-size: 30px;
+  margin-bottom: 48px;
+}
+
+.how-it-works-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.how-it-works-step {
+  border-top: 1px solid rgba(251, 249, 244, 0.2);
+  padding-top: 20px;
+}
+
+.how-it-works-number {
+  font-family: var(--font-display);
+  font-size: 15px;
+  color: var(--color-gold);
+}
+
+.how-it-works-step h3 {
+  color: var(--color-white);
+  font-size: 20px;
+  margin-top: 12px;
+}
+
+.how-it-works-step p {
+  color: var(--color-bg);
+  opacity: 0.75;
+  font-size: 14.5px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+@media (max-width: 780px) {
+  .how-it-works-steps {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

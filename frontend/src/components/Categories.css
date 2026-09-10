@@ -1,0 +1,120 @@
+.categories {
+  padding: 32px 0 96px;
+}
+
+.categories-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.categories-heading h2 {
+  font-size: 30px;
+}
+
+.categories-heading p {
+  color: var(--color-stone);
+  font-size: 15px;
+  max-width: 320px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 160px;
+  gap: 16px;
+}
+
+.category-card {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: block;
+  color: var(--color-white);
+}
+
+.category-card--wide {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.category-card--tall {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.category-card-image {
+  position: absolute;
+  inset: 0;
+}
+
+.category-card-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(28, 43, 34, 0.05) 0%, rgba(28, 43, 34, 0.75) 100%);
+}
+
+.category-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover .category-card-image img {
+  transform: scale(1.04);
+}
+
+.category-card-body {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.category-card-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.category-card-top h3 {
+  color: var(--color-white);
+  font-size: 22px;
+}
+
+.category-card-count {
+  font-size: 12px;
+  color: var(--color-bg);
+  opacity: 0.85;
+}
+
+.category-card-body p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--color-bg);
+  opacity: 0.9;
+  max-width: 320px;
+}
+
+@media (max-width: 780px) {
+  .categories-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 200px;
+  }
+  .category-card--wide,
+  .category-card--tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+.category-card {
+  display: block;
+}

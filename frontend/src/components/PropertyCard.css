@@ -1,0 +1,89 @@
+.property-card {
+  display: block;
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(28, 43, 34, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(28, 43, 34, 0.14);
+}
+
+.property-card-image {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.property-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.property-card-body {
+  padding: 18px 20px 20px;
+}
+
+.property-card-body h3 {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.property-card-location {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--color-stone);
+}
+
+.property-card-specs {
+  margin-top: 8px;
+  font-size: 13.5px;
+  color: var(--color-forest);
+}
+
+.property-card-footer {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(28, 43, 34, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.property-card-price {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--color-ink);
+}
+
+.property-card-price span {
+  font-family: var(--font-body);
+  font-size: 11.5px;
+  color: var(--color-stone);
+}
+
+.property-card-fee {
+  font-size: 12px;
+  color: var(--color-stone);
+}
+.property-card--booked {
+  opacity: 0.6;
+}
+
+.property-card-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--color-ink);
+  color: var(--color-white);
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.property-card-image {
+  position: relative;
+}
