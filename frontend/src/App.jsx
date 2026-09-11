@@ -8,6 +8,7 @@ import BookingConfirmPage from './pages/BookingConfirmPage.jsx';
 import AdminDashboardPage from './pages/AdminDashboardPage.jsx';
 import AdminRoute from './routes/AdminRoute.jsx';
 import MyBookingsPage from './pages/MyBookingsPage.jsx';
+import ForgotPasswordPage from './pages/ForgotPasswordPage.jsx';
 
 export default function App() {
   return (
@@ -16,8 +17,9 @@ export default function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/property/:id" element={<PropertyDetailPage />} />
         <Route path="/category/:slug" element={<CategoryPage />} />
-        <Route path="/login" element={<LoginPage />} />
+<Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
+        <Route path="/forgot-password" element={<ForgotPasswordPage />} />
         <Route path="/book/:id" element={<BookingConfirmPage />} />
         <Route path="/my-bookings" element={<MyBookingsPage />} />
         <Route
